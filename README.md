@@ -6,3 +6,4 @@ Python Version : 3.6. You can use any IDE of your choice. I personally use PyCha
 
 Libraries required :
 
+Numpy, Scipy, Keras, Tensorflow, cvxopt, cython, scikit-learn, matplotlib
