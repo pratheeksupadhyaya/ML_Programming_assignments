@@ -6,16 +6,24 @@
 import numpy as np
 import cvxopt
 
+def linear_kernel(x1, x2, p):
+	return	#complete 
 
+def polynomial_kernel(x, y, p):
+	return	# complete
+
+def def gaussian_kernel(x, y, sigma):
+	return # complete
 
     
-def SVM_learner(traindata, trainlabels, C):
+def SVM_learner(traindata, trainlabels, C, kernel, r):
     
 #     INPUT : 
 #     traindata   - m X n matrix, where m is the number of training points
 #     trainlabels - m X 1 vector of training labels for the training data
 #     C           - SVM regularization parameter (positive real number)
-#     
+#     kernel - specifies the kernel function
+#     r - kernel parameter (real number)
 #     
 #     OUTPUT :
 #     returns the structure 'model' which has the following fields:
@@ -85,7 +93,7 @@ def SVM_learner(traindata, trainlabels, C):
     return model
     
     
-def SVM_classifier(testdata, model):
+def SVM_classifier(testdata, model, kernel, r):
     
 
 #     INPUT
